@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "globals": {
+    "document": true
+  },
+  "rules": {
+    "max-len": [ 1, 120, 2, { ignoreComments: true } ],
+    "comma-dangle": ["error", "never"],
+    "object-curly-newline": off,
+    "react/jsx-filename-extension": [1, { "extensions":[".js", ".jsx"] }],
+    "react/default-props-match-prop-types": ["off", { "allowRequiredDefaults": 0 }],
+    "react/require-default-props": "off",
+    "import/no-extraneous-dependencies": 0
+  },
+  "extends": "airbnb",
+  "plugins": [ "react" ]
+}

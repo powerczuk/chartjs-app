@@ -1,0 +1,159 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  width: 60%;
+  color: @color1;
+  .box-shadow();
+
+  @media (max-width : 1024px) {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  &__header {
+    display: flex;
+    padding: 0 12px;
+    background-color: @color1;
+  }
+
+  &__icon {
+    position: relative;
+    top: -12px;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    color: @color1;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fff;
+    .box-shadow();
+  }
+
+  &__label {
+    color: @color5;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-left: 14px;
+
+    @media (max-width : 768px) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    padding: 14px;
+
+    @media (max-width : 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__chart {
+    flex: 3;
+
+    @media (max-width : 768px) {
+      flex: 1;
+    }
+
+    canvas {
+      max-width: 100%;
+    }
+  }
+
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 12px 6px;
+
+    @media (max-width : 768px) {
+      padding: 6px 0;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 10px 0;
+    }
+  }
+
+  &__description {
+    text-align: right;
+
+    @media (max-width : 768px) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &-prefix {
+      vertical-align: top;
+      line-height: 34px;
+      font-size: 22px;
+
+      @media (max-width : 768px) {
+        font-size: 12px;
+        line-height: 24px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 20px;
+        line-height: 34px;
+      }
+    }
+
+    &-value {
+      font-size: 54px;
+      font-weight: 700;
+
+      @media (max-width : 768px) {
+        font-size: 24px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 44px;
+      }
+    }
+
+    &-label {
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 32px;
+
+      @media (max-width : 768px) {
+        font-size: 12px;
+        line-height: 24px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  button {
+    margin-bottom: 50px;
+
+    @media only screen and (max-width : 768px) {
+      margin-bottom: 0;
+      font-size: 14px;
+      letter-spacing: 1.6;
+      padding: 5px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 0;
+      font-size: 20px;
+      letter-spacing: 1.8;
+    }
+  }
+}
